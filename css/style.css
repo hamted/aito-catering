@@ -76,7 +76,8 @@ body{
 /* ---------- HERO ---------- */
 .aito-hero{
   position: relative;
-  height: 72vh;
+  height: 75vh;
+  min-height: 400px;
   width: 100%;
   background-image: url("../img/hero.jpg");
   background-size: cover;
@@ -99,7 +100,7 @@ body{
 /* translucent coral panel behind hero text */
 .hero-panel{
   position: absolute;
-  top: 52%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(254, 103, 97, 0.30);
@@ -138,6 +139,37 @@ body{
 .hero-btn:hover{
   background-color: #e85a55;
   color: white;
+}
+
+
+/* ---------- FOOTER ---------- */
+.aito-footer{
+  background-color: var(--aito-coral);
+  padding: 28px 0;        /* reduced from 50px */
+  margin-top: 60px;       /* less spacing above */
+  text-align: center;
+}
+
+.footer-brand{
+  color: var(--aito-cream);
+  font-weight: 700;
+  font-size: 1.2rem;      /* smaller title */
+  margin-bottom: 10px;
+}
+
+.footer-links{
+  gap: 24px;              /* tighter spacing */
+}
+
+.footer-links a{
+  color: var(--aito-cream);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;     /* slightly smaller */
+}
+
+.footer-links a:hover{
+  text-decoration: underline;
 }
 
 /* ---------- Mobile tweaks ---------- */
