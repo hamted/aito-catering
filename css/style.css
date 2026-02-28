@@ -1,0 +1,149 @@
+:root{
+  --aito-coral: #FE6761;
+  --aito-cream: #FFF4F0;
+  --aito-text-white: #ffffff;
+  --aito-text-black: #000000;
+  --aito-muted: #6b6b6b;
+  --aito-border: rgba(0,0,0,0.08);
+}
+
+body{
+  margin: 0;
+  background-color: var(--aito-cream);
+  color: var(--aito-text-black);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- TOP NAV (Cream) ---------- */
+.aito-navbar{
+  background-color: var(--aito-cream);
+  padding: 14px 0;
+}
+
+.aito-logo{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.aito-brand-text{
+  color: var(--aito-coral);
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+/* Order button (top right) */
+.btn-aito{
+  background-color: var(--aito-coral);
+  color: var(--aito-text-white);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 800;
+}
+
+.btn-aito:hover{
+  background-color: #e85a55;
+  color: var(--aito-text-white);
+}
+
+/* Google cart icon */
+.aito-cart{
+  font-size: 38px;
+  color: var(--aito-coral);
+  vertical-align: middle;
+}
+
+/* ---------- CORAL NAV BAR ---------- */
+.aito-coral-bar{
+  background-color: var(--aito-coral);
+  padding: 12px 0;
+}
+
+.coral-link{
+  color: var(--aito-cream);
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.coral-link:hover{
+  color: var(--aito-cream);
+  text-decoration: underline;
+}
+
+/* ---------- HERO ---------- */
+.aito-hero{
+  position: relative;
+  height: 72vh;
+  width: 100%;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* Rounded ONLY on the hero section (not the whole page) */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  overflow: hidden;
+}
+
+/* dark overlay for readability */
+.aito-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.35);
+}
+
+/* translucent coral panel behind hero text */
+.hero-panel{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(254, 103, 97, 0.30);
+  padding: 42px 64px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* hero text */
+.hero-title{
+  color: white;
+  font-weight: 900;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0;
+  text-shadow: 0 8px 22px rgba(0,0,0,0.35);
+}
+
+.hero-subtitle{
+  color: white;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  margin: 14px 0 22px;
+  text-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+/* center Order Now button in hero */
+.hero-btn{
+  background-color: var(--aito-coral);
+  color: white;
+  font-weight: 900;
+  border-radius: 8px;
+  padding: 12px 32px;
+  border: none;
+}
+
+.hero-btn:hover{
+  background-color: #e85a55;
+  color: white;
+}
+
+/* ---------- Mobile tweaks ---------- */
+@media (max-width: 768px){
+  .hero-panel{
+    width: 90%;
+    padding: 28px 20px;
+  }
+}
