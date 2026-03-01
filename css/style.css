@@ -239,10 +239,26 @@ body{
   box-shadow: 0 0 0 0.2rem rgba(254, 103, 97, 0.2);
 }
 
-/* ---------- Mobile tweaks ---------- */
-@media (max-width: 768px){
-  .hero-panel{
-    width: 90%;
-    padding: 28px 20px;
-  }
+/* ---------- LOCATE PAGE ---------- */
+
+.map-box{
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.location-info{
+  background: rgba(254, 103, 97, 0.08);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.location-info h4{
+  color: var(--aito-coral);
+  font-weight: 800;
+}
+
+.location-info h5{
+  color: var(--aito-coral);
+  font-weight: 700;
 }
