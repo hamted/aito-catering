@@ -172,6 +172,73 @@ body{
   text-decoration: underline;
 }
 
+/* ---------- CONTACT PAGE ---------- */
+
+.contact-box{
+   background: rgba(254, 103, 97, 0.08);
+  border: 2px solid rgba(254, 103, 97, 0.25);
+  border-radius: 14px;
+  padding: 28px 20px;
+
+  min-height: 190px;        /* equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.25s ease;
+}
+
+.contact-box h5{
+  color: var(--aito-coral);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.contact-box p{
+  margin: 0;
+  color: #444;
+}
+
+.contact-icon{
+  font-size: 36px;
+  color: var(--aito-coral);
+}
+
+.locate-box{
+  cursor: pointer;
+}
+
+.locate-box:hover{
+  background: var(--aito-coral);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.locate-box:hover h5,
+.locate-box:hover p,
+.locate-box:hover .contact-icon{
+  color: white;
+}
+
+/* form styling */
+.form-box{
+  background: rgba(254, 103, 97, 0.08);
+  padding: 25px;
+  border-radius: 14px;
+  min-height: 400px;  /* ensures similar height balance */
+}
+
+.form-control{
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.form-control:focus{
+  border-color: var(--aito-coral);
+  box-shadow: 0 0 0 0.2rem rgba(254, 103, 97, 0.2);
+}
+
 /* ---------- Mobile tweaks ---------- */
 @media (max-width: 768px){
   .hero-panel{
