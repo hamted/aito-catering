@@ -45,6 +45,44 @@
   </div>
 </div>
 
+<main class="container my-5">
+  <h2 class="mb-4">Customer Info</h2>
+
+  <section class="info-card mx-auto">
+    <form id="customerForm" class="info-grid">
+
+      <label class="info-label" for="firstName">First Name</label>
+      <input class="info-input" id="firstName" type="text" required>
+
+      <label class="info-label" for="lastName">Last Name</label>
+      <input class="info-input" id="lastName" type="text" required>
+
+      <label class="info-label" for="phone">Phone Number</label>
+      <input class="info-input" id="phone" type="tel" placeholder="+1 (613) 000-AITO" required>
+
+      <label class="info-label" for="email">E-mail</label>
+      <input class="info-input" id="email" type="email" placeholder="name@email.com" required>
+
+      <label class="info-label" for="address1">Address Line 1</label>
+      <input class="info-input" id="address1" type="text" required>
+
+      <label class="info-label" for="city">City</label>
+      <input class="info-input small-input" id="city" type="text" required>
+
+      <label class="info-label" for="province">Province</label>
+      <input class="info-input small-input" id="province" type="text" required>
+
+      <label class="info-label" for="postal">Postal Code</label>
+      <input class="info-input small-input" id="postal" type="text" placeholder="K2K 2K2" required>
+
+      <button type="submit" class="btn info-submit">Confirm Order</button>
+
+    </form>
+  </section>
+</main>
+
+<script src="js/info.js"></script>
+
 <footer class="aito-footer">
   <div class="container text-center">
 

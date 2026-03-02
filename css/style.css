@@ -262,3 +262,142 @@ body{
   color: var(--aito-coral);
   font-weight: 700;
 }
+
+/* ---------- ORDER PAGE ---------- */
+
+.order-card{
+  width: min(520px, 100%);
+  background: rgba(254, 103, 97, 0.10);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.order-form-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 12px 16px;
+  align-items: center;
+}
+
+.order-label{
+  color: var(--aito-coral);
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.order-input{
+  background: rgba(255, 244, 240, 0.85);
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 10px 12px;
+}
+
+.order-textarea{
+  grid-column: 2 / 3;
+  background: rgba(255, 244, 240, 0.85);
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 10px 12px;
+}
+
+.order-estimate-row{
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.order-estimate{
+  background: rgba(255, 244, 240, 0.95);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 800;
+  color: var(--aito-text-black);
+}
+
+.order-submit{
+  grid-column: 1 / 3;
+  background: var(--aito-coral);
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+  padding: 10px 18px;
+  border: none;
+  margin-top: 6px;
+}
+
+.order-submit:hover{
+  background: #e85a55;
+  color: white;
+}
+
+/* ---------- CUSTOMER INFO PAGE ---------- */
+
+.info-card{
+  width: min(560px, 100%);
+  background: rgba(254, 103, 97, 0.10);
+  border-radius: 26px;
+  padding: 34px 36px;
+}
+
+.info-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 14px 18px;
+  align-items: center;
+}
+
+.info-label{
+  color: var(--aito-coral);
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.info-input{
+  background: rgba(254, 103, 97, 0.20); /* light pink block */
+  border: none;
+  border-radius: 0;                     /* square like your mockup */
+  padding: 10px 12px;
+  outline: none;
+}
+
+.info-input:focus{
+  box-shadow: 0 0 0 0.2rem rgba(254, 103, 97, 0.25);
+}
+
+.small-input{
+  max-width: 160px;
+}
+
+.info-submit{
+  grid-column: 1 / 3;
+  justify-self: center;
+  margin-top: 10px;
+
+  background: var(--aito-coral);
+  color: white;
+  font-weight: 900;
+  border-radius: 0;     /* square button like mockup */
+  border: none;
+  padding: 10px 18px;
+}
+
+.info-submit:hover{
+  background: #e85a55;
+  color: white;
+}
+
+/* Mobile stack */
+@media (max-width: 576px){
+  .info-grid{
+    grid-template-columns: 1fr;
+  }
+  .small-input{
+    max-width: 100%;
+  }
+  .info-submit{
+    grid-column: 1 / 2;
+    width: 100%;
+  }
+}

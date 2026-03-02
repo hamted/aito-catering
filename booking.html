@@ -46,6 +46,52 @@
   </div>
 </div>
 
+<main class="container my-5">
+  <h2 class="mb-4">Order Page</h2>
+
+  <div class="order-card mx-auto">
+    <form id="orderForm" class="order-form-grid">
+
+      <label for="package" class="order-label">Package</label>
+      <select id="package" class="form-control order-input" required>
+        <option value="20" data-min="5">Classic Buffet ($20/person, min 5)</option>
+        <option value="30" data-min="10">Premium Buffet ($30/person, min 10)</option>
+        <option value="40" data-min="20">Deluxe Package ($40/person, min 20)</option>
+      </select>
+
+      <label for="eventType" class="order-label">Event Type</label>
+      <input id="eventType" class="form-control order-input" type="text"
+             placeholder="Birthday, Corporate, etc." required>
+
+      <label for="eventDate" class="order-label">Event Date</label>
+      <input id="eventDate" class="form-control order-input" type="date" required>
+
+      <label for="eventTime" class="order-label">Event Time</label>
+      <input id="eventTime" class="form-control order-input" type="time" required>
+
+      <label for="guests" class="order-label">Guest Count</label>
+      <input id="guests" class="form-control order-input" type="number" min="1" value="5" required>
+      <!-- <small id="minGuestsText" class="text-muted"></small> -->
+
+      <label for="venue" class="order-label">Event Venue</label>
+      <input id="venue" class="form-control order-input" type="text"
+             placeholder="Venue name or address" required>
+
+      <label for="requests" class="order-label">Special Requests or<br>Dietary Requirements</label>
+      <textarea id="requests" class="form-control order-textarea" rows="3"
+                placeholder="Any allergies, dietary restrictions, or special requirements..."></textarea>
+
+      <div class="order-estimate-row">
+        <span class="order-label">Estimate</span>
+        <span class="order-estimate" id="estimateText">$100.00 ($20 x 5)</span>
+      </div>
+
+      <button type="submit" class="btn order-submit">Place Order</button>
+
+    </form>
+  </div>
+</main>
+
 <footer class="aito-footer">
   <div class="container text-center">
 
@@ -60,4 +106,5 @@
 
   </div>
 </footer>
+<script src="js/booking.js"></script>
 </body>
