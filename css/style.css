@@ -459,3 +459,58 @@ body{
   background: var(--aito-coral);
   color: white;
 }
+
+/* ===== MENU PAGE ===== */
+.aito-page{
+  padding-top: 120px; /* space for fixed navbar */
+  padding-bottom: 60px;
+}
+
+.aito-section-title{
+  color: var(--aito-coral);
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.aito-section-sub{
+  max-width: 760px;
+  color: var(--aito-muted);
+  margin-bottom: 18px;
+}
+
+/* package card */
+.aito-card{
+  background: rgba(254, 103, 97, 0.08); /* tiny coral tint */
+  border: 1px solid rgba(254, 103, 97, 0.25);
+  border-radius: 10px;
+  padding: 14px;
+  height: 100%;
+}
+
+.aito-card-img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.aito-card-title{
+  color: var(--aito-coral);
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+}
+
+.aito-card-meta{
+  color: var(--aito-coral);
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.aito-card-desc{
+  color: #4d4d4d;
+  font-size: 0.95rem;
+  min-height: 90px; /* keeps cards similar height */
+}

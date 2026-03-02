@@ -106,6 +106,40 @@ function validate48hAndHours(dateStr, timeStr) {
   return { ok: true, message: "" };
 }
 
+function applySavedPackageSelection() {
+  const packageEl = document.getElementById("package");
+  const guestsEl = document.getElementById("guests");
+  if (!packageEl) return;
+
+  const saved = localStorage.getItem("aitoOrder");
+  if (!saved) return;
+
+  let order;
+  try {
+    order = JSON.parse(saved);
+  } catch {
+    return;
+  }
+
+  if (!order?.packageName) return;
+
+  // Find the <option> whose text includes the package name
+  const options = Array.from(packageEl.options);
+  const match = options.find(opt =>
+    opt.text.toLowerCase().includes(String(order.packageName).toLowerCase())
+  );
+
+  if (match) {
+    packageEl.value = match.value;
+
+    // Set guests to at least the min for that option
+    const min = Number(match.dataset.min);
+    if (guestsEl && Number.isFinite(min) && min > 0) {
+      guestsEl.value = String(min);
+    }
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const packageEl = document.getElementById("package");
   const guestsEl = document.getElementById("guests");
@@ -142,6 +176,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+    applySavedPackageSelection();
+    
   updateEstimate();
 
   form.addEventListener("submit", (e) => {
