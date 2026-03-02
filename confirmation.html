@@ -45,6 +45,56 @@
   </div>
 </div>
 
+<main class="container my-5">
+  <h2 class="mb-4">Order Confirmation</h2>
+
+  <section class="confirm-card mx-auto">
+
+    <!-- THANK YOU -->
+    <div class="confirm-section">
+      <h4 class="confirm-title">THANK YOU!</h4>
+
+      <div class="confirm-banner" id="orderBanner">
+        Your order <strong id="orderNumber">#ON00000000</strong> has been received.
+      </div>
+
+      <p class="confirm-text mt-3">
+        A confirmation e-mail has been sent to
+        <strong id="confirmEmail">your@email.com</strong>.
+        Please also check your spam folder.
+      </p>
+    </div>
+
+    <!-- DELIVERY DETAILS -->
+    <div class="confirm-section mt-4">
+      <h5 class="confirm-subtitle">Delivery Details</h5>
+
+      <p class="confirm-text" id="deliveryDetails">
+        <!-- filled by JS -->
+      </p>
+    </div>
+
+    <!-- RATING -->
+    <div class="confirm-section mt-4">
+      <h5 class="confirm-subtitle">How did we do today?</h5>
+      <p class="confirm-text">
+        Based on your experience, how likely are you to recommend us to your family and friends?
+      </p>
+
+      <div class="rating-row" id="ratingRow">
+        <button type="button" class="rating-btn" data-rating="1">1</button>
+        <button type="button" class="rating-btn" data-rating="2">2</button>
+        <button type="button" class="rating-btn" data-rating="3">3</button>
+        <button type="button" class="rating-btn" data-rating="4">4</button>
+        <button type="button" class="rating-btn" data-rating="5">5</button>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<script src="js/confirmation.js"></script>
+
 <footer class="aito-footer">
   <div class="container text-center">
 

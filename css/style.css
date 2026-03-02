@@ -401,3 +401,61 @@ body{
     width: 100%;
   }
 }
+
+/* CONFIRMATION PAGE */
+
+.confirm-card{
+  width: min(640px, 100%);
+  background: rgba(254,103,97,0.10);
+  padding: 24px;
+}
+
+.confirm-section{
+  background: rgba(255,244,240,0.6);
+  padding: 16px;
+}
+
+.confirm-title{
+  color: var(--aito-coral);
+  font-weight: 900;
+}
+
+.confirm-banner{
+  background: rgba(254,103,97,0.25);
+  padding: 8px 12px;
+  font-weight: 700;
+  color: var(--aito-coral);
+}
+
+.confirm-subtitle{
+  color: var(--aito-coral);
+  font-weight: 800;
+}
+
+.confirm-text{
+  color: var(--aito-coral);
+}
+
+.rating-row{
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.rating-btn{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(254,103,97,0.25);
+  color: var(--aito-coral);
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rating-btn.active{
+  background: var(--aito-coral);
+  color: white;
+}
